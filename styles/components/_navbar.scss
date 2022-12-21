@@ -1,0 +1,153 @@
+@import '../abstract/variables';
+
+.navbar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 20px;
+    position: relative;
+
+    .open-menu {
+        display: block;
+        z-index: 10;
+    }
+
+    .close-menu {
+        z-index: 10;
+    }
+
+    .menu {
+        background-color: $almost-white;
+        color: $medium-gray;
+        font-size: 0.85rem;
+        position: absolute;
+        top: 0;
+        right: 200vw;
+        padding: 70px 25px;
+        z-index: 6;
+        width: 65vw;
+        height: 100vh;
+
+        a{
+            color: $medium-gray;
+        }
+
+        .menu__item {
+            padding: 10px 0;
+
+            .display-none{
+                display: none;
+            }
+
+            button{
+                background-color: transparent;
+                border: none;
+                color: $medium-gray;
+                font-family: $font;
+                font-size: 0.85rem;
+            }
+
+            .sub-menu-features li {
+                display: grid;
+                grid: auto / 30px auto;
+                margin: 20px 0;
+                padding-left: 20px;
+            }
+
+            .sub-menu-company li {
+                margin: 20px 0;
+                padding-left: 20px;
+            }
+        }
+
+        .sign-in {
+            margin-top: 20px;
+            text-align: center;
+            width: 100%;
+
+            li:last-child{
+                border: 2px solid $medium-gray;
+                border-radius: 15px;
+                margin-top: 15px;
+                padding: 15px 0;
+            }
+        } 
+    }
+
+    .show-menu {
+        right: 0vw;
+    }
+    .display-none{
+        display: none;
+    }
+    @media screen and(min-width: $min-width){
+        margin: auto;
+        max-width: 1400px;
+        .open-menu {
+            display: none;
+        }
+
+        .menu {
+            background-color: transparent;
+            display: flex;
+            justify-content: space-between;
+            height: auto;
+            margin-left: 30px;
+            padding: 0;
+            position: relative;
+            right: 0;
+            width: 100%;
+
+            .options-menu {
+                display: flex;  
+                align-items: center;
+                li {
+                    padding: 0 10px;
+                    position: relative;
+                    &:hover{
+                        color: $almost-black;
+                        cursor: pointer;
+                    }
+                    button{
+                        align-items: center;
+                        display: inline-flex;
+                        &:hover{
+                            color: $almost-black;
+                            cursor: pointer;
+                        }
+                        img {
+                            margin-left: 5px;
+                        }
+                    }
+                    .sub-menu-features, .sub-menu-company{
+                        border-radius: 10px;
+                        box-shadow: 5px 5px 50px -18px rgba(0,0,0,0.75);
+                        position: absolute;
+                        right: 0px;
+                        top: 30px;
+                    }
+                }
+            }
+
+            .sign-in{
+                align-items: center;
+                display: flex;
+                justify-content: flex-end;
+                margin-top: 0;
+                li a:hover{
+                    color: $almost-black;
+                }
+
+                li:last-child {
+                    height: fit-content;
+                    margin-left: 30px;
+                    margin-top: 0;
+                    padding: 10px 20px;
+                }
+            }
+        }
+    }
+
+}
+
+

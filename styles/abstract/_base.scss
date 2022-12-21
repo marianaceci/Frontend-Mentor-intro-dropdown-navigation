@@ -1,0 +1,39 @@
+@import './variables';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {    
+    color: $medium-gray;
+    font-family: $font;
+    font-size: $font-size;
+
+    body {
+        max-width: 1440px;
+        margin: 0 auto;
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        .dark-background{
+            background-color: black;
+            height: 100%;
+            left: 0;
+            opacity: 0.6;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 5;
+
+            @media screen and (min-width: $min-width){
+                display: none;
+            }
+        }    
+    }
+}

@@ -1,0 +1,81 @@
+@import '../abstract/variables';
+
+main{
+    picture img{
+        max-width: 100%;
+    }
+
+    .text {
+        color: $almost-black;
+        padding: 0 10px;
+        margin: 40px auto;
+        text-align: center;
+        
+        p{
+            color: $medium-gray;
+            font-size: 0.9rem;
+            line-height: 1.5rem;
+            margin: 20px auto 40px auto;
+        }
+
+        a{
+            background-color: $almost-black;
+            color: $almost-white;
+            border: 2px solid $almost-black;
+            border-radius: 15px;
+            padding: 15px 25px;
+        }
+
+        .clients {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            img {
+                width: 70%;
+            }
+        }
+    }
+
+    @media screen and (min-width: $min-width){
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0 10% 20px 10%;
+
+        .text {
+            align-items: flex-start;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: start;
+            margin-top: 150px;
+            margin-bottom: 0;
+
+            h1 {
+                font-size: 4.5rem;
+                padding-right: 120px;
+            }
+
+            p{
+                font-size: 1.125rem;
+                line-height: 1.75rem;
+                margin: 40px 0;
+                padding-right: 150px;
+            }
+
+            a:hover{
+                background-color: transparent;
+                color: $almost-black;
+                cursor: pointer;
+            }
+
+            .clients {
+                margin-top: 50px;
+                width: 80%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

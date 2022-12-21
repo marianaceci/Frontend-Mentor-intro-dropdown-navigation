@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title> 
+</head>
+<body>
+
+  <nav class="navbar">
+    <img src="./images/logo.svg" alt="snap logo">
+    <img class="open-menu" id="open-menu" src="./images/icon-menu.svg" alt="open menu icon">
+    <img class="close-menu display-none" id="close-menu" src="./images/icon-close-menu.svg" alt="close menu icon">
+    <div class="menu" id="menu">
+      <ul class="options-menu">
+        <li class="menu__item" id="menu-item">
+          <button id="button-features" type="button">Features
+            <img id="show-features" class="display-none" src="./images/icon-arrow-up.svg" alt="open icon" >
+            <img id="close-features" src="./images/icon-arrow-down.svg" alt="close icon">
+          </button>
+          <ul id="sub-menu-features" class="display-none sub-menu-features">
+            <li><img src="./images/icon-todo.svg" alt="todo"><a href="#">Todo List</a></img></li>
+            <li><img src="./images/icon-calendar.svg" alt="calendar"><a href="#">Calendar</a></img></li>
+            <li><img src="./images/icon-reminders.svg" alt="reminders"><a href="#">Reminders</a></img></li>
+            <li><img src="./images/icon-planning.svg" alt="planning"><a href="#">Planning</a></img></li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <button id="button-company" type="button">Company
+            <img id="show-company" class="display-none" src="./images/icon-arrow-up.svg" alt="open icon">
+            <img id="close-company" src="./images/icon-arrow-down.svg" alt="close icon">
+          </button>
+          <ul id="sub-menu-company" class="display-none sub-menu-company">
+            <li><a href="#">History</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </li>
+        <li class="menu__item">Careers</li>
+        <li class="menu__item">About</li>
+      </ul>
+      <ul class="sign-in">
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Register</a></li>
+      </ul>
+    </div>      
+  </nav>
+
+  <main>
+    <picture>
+      <source srcset="./images/image-hero-desktop.png" media="(min-width: 763px)">
+      <img src="./images/image-hero-mobile.png" alt="man using a laptop"> 
+    </picture>
+    <div class="text">
+      <h1>Make remote work</h1>  
+      <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+      <a href="#">Learn more</a>
+      <ul class="clients">
+        <li><img src="./images/client-databiz.svg" alt="dataliz logo"></li>
+        <li><img src="./images/client-audiophile.svg" alt="audiophile logo"></li>
+        <li><img src="./images/client-meet.svg" alt="meet logo"></li>
+        <li><img src="./images/client-maker.svg" alt="maker logo"></li>
+      </ul>
+    </div>
+  </main>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/marianaceci">Mariana</a>.
+  </footer>
+  <div id="dark-background"></div>
+  <script src="./script.js"></script>
+</body>
+</html>
