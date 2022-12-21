@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/intro-section-with-dropdown-navigation-FKV7_-UH4E](https://www.frontendmentor.io/solutions/intro-section-with-dropdown-navigation-FKV7_-UH4E)
+- Live Site URL: [https://marianaceci.github.io/Frontend-Mentor-intro-dropdown-navigation/](https://marianaceci.github.io/Frontend-Mentor-intro-dropdown-navigation/)
 
 ## My process
 
